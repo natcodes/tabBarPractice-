@@ -12,10 +12,9 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginPressed(_ sender: Any) {
         // reference to main tab controller
-        let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
-
-        present(tabBarController!, animated: true, completion: nil)
+//        let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
 //        present(mainTabController, animated: true, completion: nil)
+        performSegue(withIdentifier: "toTabBar", sender: self)
         
     }
     
